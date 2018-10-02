@@ -1,12 +1,20 @@
 body {
-  background-color: #DFBE93; /*light yellow*/
-  font-family: 'Indie Flower', cursive;
-  color: #00ABCD;
+  background-color: #F2E0C9; /*light yellow*/
+  font-family: 'Mali', cursive;
+  font-size: 24px;
+  color: #E7AD99;
+}
+
+a {
+  font-family: 'Mali', cursive;
+  font-size: 20px;
+  color: #7A8450;
 }
 
 header {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  font-size: 30px;
 }
 
 /* type selector */
@@ -18,5 +26,5 @@ h1{
 /* descendent selector */
 h1 span {
   font-size: 90%;
-  color: #500;
+  color: #E7AD99;
 }
