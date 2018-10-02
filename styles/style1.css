@@ -1,7 +1,22 @@
 body {
-
+  background-color: #DFBE93; /*light yellow*/
+  font-family: 'Indie Flower', cursive;
+  color: #00ABCD;
 }
 
-header{
-  
+header {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* type selector */
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* descendent selector */
+h1 span {
+  font-size: 90%;
+  color: #500;
 }
