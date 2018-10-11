@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout With Blocks</title>
+
+  <!-- embeddded styles -->
+  <style>
+
+    /*reset rule */
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 100px 0px 1000px 0px;
+    }
+    header#block1 {
+      background-color: #ceec97;
+      width: 100%; height: 90px;
+      position: fixed;
+      top: 0px; left: 0px;
+    }
+    #block1b {
+      background-color: #2374AB;
+      width: 50px; height: 50px;
+      position: absolute;
+      top: 5px; right: 5px;
+    }
+    #block2, #block3 {
+      background-color: #4dccbd;
+      border: 10px solid #000;
+      width: 400px; height: 100px;
+      margin: 10px auto;
+    }
+    footer {
+      background-color: #2374ab;
+      width: 100%; height: 100px;
+      position: absolute;
+      bottom: 0px; left: 0px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <header id = "block1">
+    <div id  = "block1b">
+
+    </div>
+  </header>
+<a href="https://coolors.co/353531-ceec97-4dccbd-2374ab-ff8484" target = "_blank">
+  <div id = "block2">
+
+  </div>
+</a>
+  <div id = "block3">
+
+  </div>
+  <footer>
+
+  </footer>
+</body>
+</html>

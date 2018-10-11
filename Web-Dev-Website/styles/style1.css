@@ -1,0 +1,49 @@
+body {
+  background-color: #DFBE93; /*light yellow*/
+  font-family: 'Indie Flower', cursive;
+  color: #00ABCD;
+}
+
+/* using colors in css
+
+FF    00    00   - Bright Red
+FF    FF    00   - Bright Yellow
+_ _   _ _   _ _
+red  green blue
+
+HEX : 0 1 2 3 4 5 6 7 8 9 A B C D E F
+Dark                           Bright
+
+*/
+
+header {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* type selector */
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* descendent selector */
+h1 span {
+  font-size: 90%;
+  color: #500;
+}
+
+p{
+  font-style: italic;
+  color: #333;
+ font-size: 24px;
+}
+
+/* class selector */
+.one {
+  border: 5px solid #900;
+  background-color: #FF9;
+  color: #000;
+  padding: 2em 1em;
+  margin: 2em;
+}

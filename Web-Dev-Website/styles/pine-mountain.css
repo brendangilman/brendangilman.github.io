@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: veranda;
+  background-color: pink;
+}
+
+div#container {
+  width: 1200px;
+  min-height: 1000px;
+  background-color: white;
+  margin: 0px auto;
+}
+
+header {
+  background-color: black;
+  height: 120px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+header .logo {
+  display: block;
+  background-color: #CCF;
+  width: 280px;
+  height: 160px;
+  border-radius: 50px;
+  position: absolute;
+  left: 25px;
+  bottom: -50px;
+}
+header .logo:hover {
+  display: block;
+  background-color: #CCF;
+  width: 280px;
+  height: 160px;
+  border-radius: 50px;
+  position: absolute;
+  left: 25px;
+  bottom: -60px;
+}
+
+header .inner-header{
+  background-color: skyblue;
+  height: 120px;
+  width: 1200px;
+  margin: 0px auto;
+  position: relative;
+}
+
+header .facebook {
+display: block;
+position: absolute;
+width: 48px; height: 48px;
+bottom: 0px;
+right: 25px;
+background-color: lightgreen;
+background-image: url("../images/facebook.png");
+background-size: cover;
+}
+
+header .instagram {
+  display: block;
+  position: absolute;
+  width: 48px; height: 48px;
+  bottom: 0px;
+  right: 78px;
+  background-color: lightgreen;
+  background-image: url("../images/instagram.png");
+  background-size: cover;
+  }
+
+header .twitter {
+  display: block;
+  position: absolute;
+  width: 48px; height: 48px;
+  bottom: 0px;
+  right: 131px;
+  background-color: lightgreen;
+  background-image: url("../images/twitter.png");
+  background-size: cover;
+  }
+
+header .googleplus {
+  display: block;
+  position: absolute;
+  width: 48px; height: 48px;
+  bottom: 0px;
+  right: 184px;
+  background-color: lightgreen;
+  background-image: url("../images/googleplus.png");
+  background-size: cover;
+  }
+
+header nav {
+ background-color: lightyellow;
+ height: 25px;
+}
+
+header nav ul {
+  width: 1200px;
+  margin: 0px auto; /*center a block*/
+  text-align: right; /*center text inside "hero"*/
+}
+
+div#hero {
+  background-color: #BBB;
+  border: 5px solid tomato;
+  height: 500px;
+  margin-top: 145px;
+  background-image: url(../images/spacesmall.jpg);
+  background-size: cover;
+  background-position: 0px -200px;
+  background-attachment: fixed;
+}
+
+div#promo {
+  background-color: #888;
+  height: 450px;
+  position: relative;
+}
+
+div#promo div.mountain {
+  border: 3px solid purple;
+  width: 130%; height: 120px;
+  position: absolute;
+  left: -160px;
+  background-image: url(../images/mountain.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: 0px -40px;
+}

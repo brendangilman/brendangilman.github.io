@@ -1,0 +1,58 @@
+/*Week 2*/
+
+/* css reset rule */
+* {
+  margine: 0;
+  padding: 0:
+  border: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #222;
+  color: #EEE;
+  padding: 15px;
+}
+
+body {
+  background-color: #DAD;
+  font-family: verdana;
+  padding: .6em;
+}
+
+h1 {
+
+}
+
+h1 {
+
+}
+nav {
+  overflow: hidden;
+  width: 950px;
+  margin: 4px auto; /*center a block */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+  margin: 0px 10px;
+}
+
+nav a {
+ border: 2px solid #A0A;
+ display: block;
+ width: 150px; height: 50px;
+ text-align: center;
+ line-height: 50px;
+ text-decoration: none;
+ border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #A0A;
+  color: #FFF;
+}
