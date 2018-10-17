@@ -1,0 +1,68 @@
+/*reset rule*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.redbox {
+  display: block;
+  height: 250px; width: 250px;
+  background-color: red;
+  margin: 50px auto;
+  position: relative;
+}
+
+.redbox .inner-yellowbox {
+  display: block;
+  height: 25%; width: 25%;
+  background-color: yellow;
+}
+
+.redbox .inner-greenbox {
+  display: block;
+  height: 100px; width: 100px;
+  bottom: 0px; right: 0px;
+  margin-right: -100px;
+  background-color: green;
+  position: absolute;
+  z-index: 20;
+}
+
+.redbox .inner-bluebox {
+  display: block;
+  height: 100px; width: 100px;
+  bottom: 0px; right: 0px;
+  margin-right: -50px;
+  margin-bottom: -50px;
+  background-color: blue;
+  position: absolute;
+  z-index: -10;
+}
+
+h2 {
+  border-top: 2px solid black;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.flex-container {
+  width: 80%; height: 300px;
+  /* border: 5px solid #FF49AD; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+    /* space-around, space-evenly, space-between,
+       flex-start, flex-end, center */
+  /* align-items: center; */
+    /* flex-start, flex-end, center, stretch, baseline */
+    flex-flow: row wrap;
+}
+
+.flex-item {
+  width: 400px; height: 100%;
+  background-color: #FFB5CA;
+  border: 5px solid #FFF;
+  flex: 1 0 auto;
+}

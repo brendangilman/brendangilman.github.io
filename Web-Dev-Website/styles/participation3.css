@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  background-color: lightyellow;
+}
+
+.main-container {
+  width: 80%;
+  min-height: 900px; max-width: 1400px;
+  margin: 0 auto;
+  background-color: #FFC;
+}
+
+header {
+  min-height: 250px;
+  background-image: url(../images/office.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  background-color: rgba(200, 200, 200, 0.8);
+  color: #000;
+  font-weight: normal;
+  position: absolute;
+  left: 0px;
+  top: 60%;
+  padding: 2px 8px;
+}
+
+header > nav {
+  display: block;
+  height: 100%; width: 25%;
+  background-color: lightblue;
+  position: absolute;
+  right: 0px;
+  z-index: 1
+}
+
+/*child selector*/
+header > nav > ul {
+  list-style-type: none;
+  margin-left: 15px;
+  margin-top: 20%;
+}
+
+header > nav > ul > li {
+  padding-bottom: 15px;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+}
+
+/*adjecent selector*/
+header + nav {
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+  background-color: #E6FBFB;
+}
+
+header + nav > ul {
+  margin: auto 0px;
+  list-style-type: none;
+}
+
+header + nav > ul > li {
+  float: left;
+  padding-right: 50px;
+}
+
+header + nav > ul > li > a {
+  text-decoration: none;
+}
+
+.information-container {
+  display: flex;
+  /* border: 3px solid red; */
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.information-item {
+  width: 200px; height: 200px;
+  border: 3px solid black;
+  margin: 4px;
+}
+
+.information-container + hr {
+  border: 1px solid gray;
+  width: 55%;
+  margin: 40px auto;
+}
+
+.review-container {
+  display: flex;
+  /* border: 3px solid red; */
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 25px;
+}
+
+.review-item {
+  width: 500px; height: 100px;
+  border: 3px solid green;
+  margin: 4px;
+}
+
+footer {
+  min-height: 40px;
+  background-color: #E6FBFB;
+  margin-top: 25px
+}
