@@ -11,15 +11,6 @@ body, html {
     height: 100%;
 }
 
-/* background styling */
-.background-image {
-    background-image: url("../creative-housing-logos/logo_transparent.png"), url("../images/desk-background.jpg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 80%, cover;
-    background-position: 50% 70%, center center;
-}
-
 /* menu style in default possition */
 .menu {
   position: fixed;
