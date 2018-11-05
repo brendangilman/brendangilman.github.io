@@ -1,5 +1,5 @@
-## This is brendan's first week repo
-[https://brendangilman.github.io/CIS-195/]
+## This is brendan's repo
+[https://brendangilman.github.io]
 
 ## Welcome to GitHub Pages
 # Header 1
