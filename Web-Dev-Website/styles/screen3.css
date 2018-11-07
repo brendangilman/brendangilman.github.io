@@ -1,0 +1,82 @@
+/* reset rule */
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: beige;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold; font-size: 2em;
+}
+
+/*styles for phone*/
+@media only screen {
+
+	header, footer {
+		background: yellowgreen;
+		min-height: 15vh;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main > article {
+		background: paleturquoise;
+		min-height: 55vh;
+		flex: 1;
+	}
+
+	main > nav {
+		background-color: beige;
+		order: -1;
+		min-height: 15vh;
+	}
+
+	main > aside {
+		display: none;
+	}
+
+	header, footer, nav, article, aside {
+		padding: 1em;
+	}
+
+} /* end of phone styles */
+
+/*styles for tablet */
+@media only screen and (min-width: 500px) {
+
+	main {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	main > nav {
+		flex: 0 0 200px;
+	}
+
+	main > aside {
+		display: block;
+		background-color: peachpuff;
+		flex: 1 0 100vw;
+		min-height: 15vh;
+	}
+
+} /* end of tablet styles */
+
+/*styles for desktop */
+@media only screen and (min-width: 800px) {
+
+	main {
+		min-height: 70vh;
+	}
+
+	main > aside {
+		flex: 0 0 200px;
+	}
+
+} /* end of desktop styles */

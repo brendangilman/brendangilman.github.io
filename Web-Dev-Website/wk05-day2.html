@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Images</title>
+  <style>
+
+    body {
+      background-color: #456;
+      color: #EEE;
+      font-family: fantasy;
+      font-size: 150%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h1 span {
+      color: #FF0;
+      text-decoration: overline;
+    }
+
+    h2 {
+      color: #BCD;
+      border-bottom: 2px solid #BCD;
+    }
+
+    ul {
+      list-style-image: url(images/penguin-icon_.png);
+      list-style-type: square;
+      border-left: 10px solid #FFC;
+    }
+
+    .gif {
+      list-style-image: url(images/sample.gif);
+    }
+
+    .jpg {
+      list-style-image: url(images/sample.jpg);
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1><span>Basic</span> Image Types</h1>
+  <h2>JPG</h2>
+  <ul class = 'jpg'>
+    <li>Support 16.7 Million Colors</li>
+    <li>Lossy Compression</li>
+    <li>Small File Sizes</li>
+    <li>Not A Good Working File Format</li>
+    <li>No Animation, No Transparency</li>
+    <li>Go To</li>
+    <li>Great For Graidents</li>
+  </ul>
+
+  <h2>GIF</h2>
+  <ul class = 'gif'>
+    <li>Supports Only 256 Colors</li>
+    <li>Lossless Compression</li>
+    <li>Makes Sorta Small File Sizes</li>
+    <li>Good For Simple Line Art (Cartoons)</li>
+    <li>1 Of The 256 Colors Can Be Transparent</li>
+    <li>Supports Animation</li>
+  </ul>
+
+  <h2>PNG</h2>
+  <ul>
+    <li>Good For Line Art / Cartoons</li>
+    <li>Supports 16.7 Million Colors</li>
+    <li>Uses A Lossless Compression</li>
+    <li>Sadly, No Animation</li>
+    <li>But, Supports Animation AND Alfa Fade</li>
+    <li>Filesize Not As Good As JPG</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+	font-family: verdana; background-color: #456;
+	color: #EEE;
+}
+
+#container {
+	background-color: #222;
+	width: 90%; margin: 0px auto;
+	padding: .5em;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+header h1 {
+	color: #222;
+	text-shadow: 0px 0px 3px #EEE, 0px 0px 9px #FF3, 0px 0px 5px #F63;
+}
+
+/* adjacent selector */
+h1 + p {
+	text-transform: lowercase;
+	letter-spacing: .6em;
+}
+
+header p span {
+	color: #F63; font-size: 200%;
+	font-weight: bold;
+	position: relative; top: 8pt;
+}
+
+article {
+	background-color: #f4d35e;
+	color: #222;
+	min-height: 350px;
+	margin: 20px 0px 50px;
+	/* margin has 20top 0left/right 50 bottom */
+}
+
+article h2 {
+	font-family: 'courier new', courier, monospace;
+	font-size: 200%;
+}
+
+article:nth-child(odd) h2 {
+	margin: 12px; padding-left: 12px;
+	border-left: 20px solid #800;
+
+}
+
+article:nth-child(even) h2 {
+	text-align: right;
+	margin: 12px; padding-right: 12px;
+	border-right: 20px solid #800;
+}
+
+.example {
+	float: right; width: 50%;
+	background-color: #ebebd3;
+	min-height: 200px;
+}
+
+.explanation {
+	float: left; width: 50%;
+	background-color: #083d77;
+	min-height: 200px;
+	color: #EEE;
+}
+
+.explanation p {
+	margin: 4px;
+}
+
+.explanation pre {
+	border: 4px solid #222;
+	margin: 10px; padding: 8px;
+	background-color: #FFC;
+	color: #222;
+}
+
+.explanation code {
+	margin: 4px auto;
+	padding: 8px;
+	font-size: 12pt;
+}
+
+.article1 {
+	background-image: url(../images/mesh.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+.article2 {
+	background-image: linear-gradient(60deg,red,white 30%,blue);
+}
+
+.article3 {
+	background-image:
+	url(../images/homer.png),
+	url(../images/corn-maze.jpg);
+
+	background-size: 150px, 400px;
+	background-repeat: no-repeat, repeat;
+	background-position: 0% 120%, center center;
+}
