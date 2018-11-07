@@ -93,7 +93,6 @@ hr {
   height: 150px;
   width: 500px;
   margin: 0px auto;
-  margin-top: 25px;
 }
 
 .container nav .button {
@@ -188,14 +187,14 @@ hr {
 
 }
 
-@media (max-height: 820px) and (min-height: 720px) {
+@media (max-height: 820px) {
 
   .container h1 {
     padding-top: 50px;
   }
 
   .container nav {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
 }
