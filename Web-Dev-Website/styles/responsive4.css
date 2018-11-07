@@ -1,0 +1,17 @@
+/*reset rule*/
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: beige;
+}
+
+/*Styles for Phone*/
+@media only screen {
+
+} /*end of phone styles*/
