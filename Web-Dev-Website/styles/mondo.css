@@ -1,0 +1,124 @@
+/*Reset Rule*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/mondo-background.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.background-overlay {
+  display: block;
+  position: fixed;
+  height: 100%; width: 100%;
+  background-color: rgba(24, 24, 24, 0.8);
+}
+
+body > header {
+  display: block;
+  height: 25vh;
+  position: relative;
+}
+
+body > header .logo {
+  display: block;
+  height: 225px; width: 225px;
+  background-image: url("../images/mondo-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: -50%;
+  left: 10%;
+  z-index: 1;
+}
+
+body > header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; width: 50%;
+  position: absolute;
+  right: 1%;
+}
+
+body > header nav a {
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.active {
+  color: grey;
+}
+
+main {
+  display: block;
+  height: 80vh;
+  position: relative;
+  color: white;
+  font-family: verdana;
+  font-weight: bold;
+  text-align: center;
+}
+
+main header {
+  display: block;
+  height: 40%;
+}
+
+main header h1 {
+  padding-top: 40px;
+  font-size: 4em;
+  font-family: 'Bree Serif', serif;
+}
+
+main header h2 {
+  padding-top: 5px;
+  font-family: 'Bree Serif', serif;
+}
+
+main header p {
+  font-size: 1.25em;
+  padding-top: 15px;
+  font-family: times;
+}
+
+main article {
+  display: block;
+  height: 60%;
+  position: relative;
+  font-family: times;
+  font-size: 1.25em;
+}
+
+main article p:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  height: 30%; width: 90%;
+  margin: 0px auto;
+}
+
+main article p:nth-child(2) {
+  padding-top: 5px;
+}
+
+main article p:nth-child(3) {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  padding-top: 50px;
+}
