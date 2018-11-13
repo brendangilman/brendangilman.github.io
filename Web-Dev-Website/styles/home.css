@@ -79,6 +79,10 @@ h1 {
   z-index: 1;
 }
 
+.website {
+  color: #E8CDA0;
+}
+
 .image-container-two {
   display block;
   width: 30%; height: 100%;
