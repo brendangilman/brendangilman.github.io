@@ -31,7 +31,7 @@
 				<p>
 				tiling a background image horizontally and centered.</p>
 				<code><pre>
-background-image:    url(../images/mesh.png);
+background-image:    url("../images/vector.jpg");
 background-repeat:   repeat-x;
 background-position: center;
 				</pre></code>
@@ -59,8 +59,8 @@ background-image:
 Separate bg images and their controls with commas.</p>
 <code><pre>
 background-image:
-	url(../images/homer.png),
-	url(../images/corn-maze.jpg);
+	url("../images/penguin-icon_.png"),
+	url("../images/desert.jpg");
 
 background-size: 150px, 400px;
 background-repeat: no-repeat, repeat;
@@ -71,9 +71,17 @@ background-position: 0% 120%, center center;
 		</article>
 
 		<article>
-			<h2>Topic Title</h2>
-			<div class="example"></div>
-			<div class="explanation"></div>
+			<h2>Cover Background</h2>
+			<div class="example article4"></div>
+			<div class="explanation">
+			<p>A developer can set a full background image with background size set to cover</p>
+			<code><pre>
+background-image: url("../images/snowycity.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+			</pre></code>
+		</div>
 		</article>
 
 		<article>

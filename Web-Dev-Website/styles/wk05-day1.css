@@ -91,7 +91,7 @@ article:nth-child(even) h2 {
 }
 
 .article1 {
-	background-image: url(../images/mesh.png);
+	background-image: url("../images/vector.jpg");
 	background-repeat: repeat-x;
 	background-position: center;
 }
@@ -102,10 +102,17 @@ article:nth-child(even) h2 {
 
 .article3 {
 	background-image:
-	url(../images/homer.png),
-	url(../images/corn-maze.jpg);
+	url("../images/penguin-icon_.png"),
+	url("../images/desert.jpg");
 
 	background-size: 150px, 400px;
 	background-repeat: no-repeat, repeat;
 	background-position: 0% 120%, center center;
+}
+
+.article4 {
+	background-image: url("../images/snowycity.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
