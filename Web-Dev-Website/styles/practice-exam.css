@@ -1,0 +1,158 @@
+/*reset rule*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: verdana;
+}
+
+.container {
+  width: 980px;
+  margin: 0px auto;
+  background-color: #FCEAD7;
+  /*border: 5px solid red;*/
+}
+
+header {
+  min-height: 90px;
+  background-color: #2E435B;
+  position: relative;
+}
+
+header nav {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header h1 a {
+  font-size: 1.2em;
+  margin: auto 10px;
+  text-decoration: none;
+  color: #95A99A;
+  text-shadow: 2px 2px 2px #111;
+  margin: 10px;
+}
+
+.quote {
+  height: 95px;
+  background-color: #769588;
+  color: #EEE;
+  font-size: 1.2em;
+}
+
+.quote img {
+  height: 90%;
+  float: left;
+  margin: 3px;
+}
+
+.quote span {
+  display: block;
+  text-align: right;
+  padding-right: 50px;
+  font-style: italic;
+}
+
+.main {
+  height: 400px;
+  background-image: url(../images/startingline.jpg);
+  background-size: 100%;
+  background-position: 50% 35%;
+  position: relative;
+}
+
+.main .nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  width: 100%;
+  /*border: 3px solid red;*/
+}
+
+.main .nav a {
+  display: block;
+  width: 23%;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+
+  text-align: center;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.main .nav a:nth-child(1) {
+  background-image: url(../images/cross1.jpg);
+}
+
+.main .nav a:nth-child(2) {
+  background-image: url(../images/cross2.jpg);
+}
+
+.main .nav a:nth-child(3) {
+  background-image: url(../images/cross3.jpg);
+}
+
+.main .nav a:nth-child(4) {
+  background-image: url(../images/cross4.jpg);
+}
+
+.main .nav a:hover {
+  filter: grayscale(0%);
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+footer {
+  text-align: center;
+  background-color: #2E435B;
+  min-height: 110px;
+}
+
+footer h2 {
+  color: #F5DED0;
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+footer nav a {
+  color: #FFF;
+  padding: 0px 15px;
+}
+
+footer hr {
+  margin-top: 10px;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+footer p {
+  font-size: .9em;
+  padding: 10px 0px;
+  color: #F5DED0;
+}
