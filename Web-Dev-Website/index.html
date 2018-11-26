@@ -24,7 +24,10 @@
 
     <div class = image-container-one>
       <h1>Brendan Gilman Web Development Projects:</h1>
-      <div class = nav-container>
+
+      <div id="slider" class="sliderdown">
+
+      <div class = "nav-container one">
            <a href = "day1.html"><span>Day 1 (Basics)</span></a>
            <a href = "wk02-lists.html"><span>Week 2 Lists Practice</span></a>
            <a href = "wk02-stylesheets1.html"><span>Stylesheets Practice 1</span></a>
@@ -43,8 +46,18 @@
            <a href = "wk07-responsive.html"><span>Print vs. Screen</span></a>
            <a href = "wk07-responsive2.html"><span>Mobile Responsive</span></a>
            <a href = "wk07-responsive3.html"><span>Participation 6 Flexbox</span></a>
-      </div>
-    </div>
+           <a href = "wk08-navigation.html"><span>Participation 7 Navigation</span></a>
+           <a href="#" class="right-arrow" onclick="sliderup()">Next Page</a>
+      </div> <!-- nav-container one END -->
+
+      <div class = "nav-container two">
+           <a href="#" class="left-arrow" onclick="sliderdown()">Previous Page</a>
+
+      </div> <!-- nav-container two END -->
+
+    </div> <!-- slider END -->
+
+  </div> <!-- image-container-one END -->
 
     <div class =  image-container-two>
       <div class = aboutme-container>
@@ -58,6 +71,19 @@
           </div>
       </div>
     </div>
+
+
+<script>
+    function sliderdown() {
+    		document.getElementById('slider').setAttribute('class','sliderdown');
+    	}
+
+    function sliderup() {
+    		document.getElementById('slider').setAttribute('class','sliderup');
+    	}
+
+</script>
+
 </body>
 
 </html>

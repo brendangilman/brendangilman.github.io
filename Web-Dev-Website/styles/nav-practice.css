@@ -1,0 +1,64 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2E0C9;
+}
+
+header {
+  display: block;
+  height: 100px; width: auto;
+  background-color: #262228;
+  position: relative;
+}
+
+.header-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px; width: auto;
+  position: absolute;
+  left: 50px;
+  top: 12.5px;
+}
+
+.header-logo {
+  display: block;
+  height: 75px; width: 75px;
+  background-image: url("../images/apple.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-logo-container p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px; width: 60%;
+  border: 3px solid pink;
+  position: absolute;
+  right: 25px;
+  top: 12.5px;
+}
+
+header nav a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
+  line-height: 75px;
+  padding: 15px;
+}

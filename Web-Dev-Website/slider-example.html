@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Week 9 | Div Jump</title>
+
+	<meta name="author" content="Ralph Phillips">
+	<meta name="description" content="sample cis195 (web development I) portfolio for ralph phillips">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Kalam|Montserrat" rel="stylesheet">
+	<style>
+	* {
+		margin: 0; padding: 0; border: 0; box-sizing: border-box;
+	}
+
+	body {
+		background-color: #FFF;
+		background-image: linear-gradient(120deg,#F7F7F7,#e0e0e0);
+		font-family: 'Montserrat', sans-serif;
+		padding: 1em;
+		border: 10px solid BlueViolet;
+		min-height: 100vh;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	#parent-container {
+		border: 10px solid DarkSeaGreen;
+		margin: 20px auto;
+		width: 90vw; height: 80vh;
+		/* overflow: hidden; */
+		position: relative;
+	}
+
+	#divvy1, #divvy2 {
+		margin: 0px auto;
+		width: 100%; height: 100%;
+		margin-bottom: 50px;
+		border: 20px solid transparent;
+	}
+
+	#divvy1 {
+
+
+	}
+
+	#divvy1 .innerdiv {
+		border: 20px solid Plum;
+		width: 100%; height: 100%;
+		padding: 1em;
+	}
+
+	#divvy2 {
+
+
+	}
+
+	#divvy2 .innerdiv {
+		border: 20px solid Peru;
+		width: 100%; height: 100%;
+		padding: 1em;
+	}
+
+	#slider {
+		position: absolute;
+		width: 100%; height: 100%;
+    border: 3px solid lime;
+		transition: top 400ms ease-in-out;
+	}
+
+	.sliderdown {
+		top: 0%; left: 0;
+
+	}
+
+	.sliderup {
+		top: calc(-100% - 50px); left: 0;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Div Jump</h1>
+
+
+	<div id="parent-container">
+
+		<div id="slider" class="sliderdown">
+
+		<div id="divvy1"><div class="innerdiv"><a href="#" onclick="sliderup()">jump to divvy 2</a> <h2>This is Divvy 1</h2></div></div>
+
+		<div id="divvy2"><div class="innerdiv"><a href="#" onclick="sliderdown()">jump to divvy 1</a> <h2>This is Divvy 2</h2></div></div>
+
+		</div>
+
+	</div>
+
+<script>
+function sliderdown() {
+		document.getElementById('slider').setAttribute('class','sliderdown');
+	}
+
+function sliderup() {
+		document.getElementById('slider').setAttribute('class','sliderup');
+	}
+
+</script>
+
+</body>
+</html>
