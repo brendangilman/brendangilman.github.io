@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Photo Story</title>
+  <!-- extenal styles -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="styles/photostory.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>This is a slideshow example</h1>
+  </header>
+
+  <div class="slideshow-container">
+
+    <div class="photo-container">
+      <img class="slide" id="one" src="images/desert.jpg" alt="">
+      <img class="slide" id="two" src="images/space.jpg" alt="">
+      <img class="slide" id="three" src="images/snowycity.jpg" alt="">
+    </div>
+
+    <div class="photo-navigation">
+      <div class="thumbnail one" onclick="currentImage(1)"></div>
+      <div class="thumbnail two" onclick="currentImage(2)"></div>
+      <div class="thumbnail three" onclick="currentImage(3)"></div>
+    </div>
+
+  </div>
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+
+    //turning thumbnail div tags to variables
+    const $thumbOne = $(".one")
+    const $thumbTwo = $(".two")
+    const $thumbThree = $(".three")
+
+    //turning thumbnail div tags to variables
+    const $slideOne = $("#one")
+    const $slideTwo = $("#two")
+    const $slideThree = $("#three")
+
+    $thumbOne.click(function(){
+        $slideTwo.hide();
+        $slideThree.hide();
+        $slideOne.fadeIn(1000);
+    });
+
+    $thumbTwo.click(function(){
+        $slideOne.hide();
+        $slideThree.hide();
+        $slideTwo.fadeIn(1000);
+    });
+
+    $thumbThree.click(function(){
+        $slideTwo.hide();
+        $slideOne.hide();
+        $slideThree.fadeIn(1000);
+    });
+
+  }); //jquery end
+  </script>
+
+</body>
+</html>
