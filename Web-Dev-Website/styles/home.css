@@ -205,3 +205,76 @@ h1 {
   }
 
 }
+
+/*REALLY SMALL PHONES ;(*/
+
+@media (max-width: 600px) and (max-height: 740px) {
+
+
+  .sliderdown {
+    top: 0%; left: 0;
+
+  }
+
+  .sliderup {
+    top: calc(-100% + 0px); left: 0;
+  }
+
+  .nav-container {
+    margin: 75px auto;
+  }
+
+  .two {
+    margin-top: 150px;
+  }
+
+  .image-container-two {
+    margin: -5% auto;
+  }
+
+}
+
+@media (max-width: 600px) and (max-height: 668px) {
+
+  .nav-container a {
+    height: 55px; width: 75px;
+    line-height: 55px;
+    font-size: 0.5em;
+  }
+
+  .right-arrow {
+    background-size: 25px
+  }
+
+  .left-arrow {
+    background-size: 25px
+  }
+
+}
+
+@media (max-width: 600px) and (max-height: 569px) {
+
+  .sliderdown {
+    top: 0%; left: 0;
+
+  }
+
+  .sliderup {
+    top: calc(-100% + -45px); left: 0;
+  }
+
+  .nav-container a {
+    height: 40px; width: 75px;
+    line-height: 40px;
+    font-size: 0.4em;
+  }
+
+  .right-arrow {
+    background-size: 20px
+  }
+
+  .left-arrow {
+    background-size: 20px
+  }
+
+}
