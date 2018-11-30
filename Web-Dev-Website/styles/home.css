@@ -13,7 +13,7 @@ body {
 }
 
 .image-container-one {
-  display block;
+  display: block;
   width: 70%; height: 100%;
   /* border: 5px solid black; */
   position: fixed;
@@ -165,4 +165,43 @@ h1 {
   font-family: 'Space Mono', monospace;
   font-size: 1.2em;
   color: white;
+}
+
+/*Lets make this mobile responsive vvvvvvvv*/
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .image-container-one {
+    position: relative;
+    min-height: 100vh; width: 100%;
+  }
+
+  .nav-container {
+    margin: 100px auto;
+    width: 100%;
+  }
+
+  .nav-container a {
+    height: 65px; width: 80px;
+    line-height: 65px;
+    font-size: 0.5em;
+  }
+
+  .right-arrow {
+    background-size: 30px
+  }
+
+  .left-arrow {
+    background-size: 30px
+  }
+
+  .image-container-two {
+    position: relative;
+    margin: -5% auto;
+    height: 100vh; width: 100%;
+  }
+
 }

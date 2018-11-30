@@ -1,0 +1,251 @@
+/*Reset*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: block;
+  height: 20vh; width: 100%;
+  position: relative;
+}
+
+.header-nav-one {
+  display: block;
+  height: auto; width: 25%;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.header-nav-one a {
+  text-decoration: none;
+  padding: 2%;
+  font-size: 1.1em;
+}
+
+.header-red {
+  display: block;
+  height: 20%; width: 10%;
+  background-color: red;
+  position: absolute;
+  top: 5%;
+  right: 1%;
+}
+
+.header-logo {
+  display: block;
+  height: 60%; width: 10%;
+  background-image: url("../images/backpack.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -12.5%;
+  left: 0;
+  z-index: 1;
+}
+
+.header-nav-two {
+  display: block;
+  height: 20%; width: 85%;
+  background-color: #262228;
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+}
+
+.header-nav-two a {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+/*MAIN ONE*/
+.main-one {
+  display: block;
+  height: 45vh; width: 100%;
+  position: relative;
+}
+
+.main-one-gray {
+  display: block;
+  position: absolute;
+  top: 7.5%;
+  left: 1%;
+  height: 85%; width: 70%;
+  background-color: #262228;
+}
+
+.main-one-image-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 7.5%;
+  right: 1%;
+  height: 85%; width: 17.5%;
+}
+
+.main-one-image {
+  display: block;
+  height: 30%; width: 90%;
+}
+
+.main-one .green {
+  background-color: green;
+}
+
+.main-one .purple {
+  background-color: purple;
+}
+
+.main-one .blue {
+  background-color: blue;
+}
+
+/*MAIN TWO*/
+.main-two {
+  display: block;
+  height: 70vh; width: 100%;
+  position: relative;
+}
+
+.main-two-red {
+  display: block;
+  height: 85%; width: 25%;
+  background-color: red;
+  position: absolute;
+  left: 1%;
+  top: 2%;
+}
+
+.main-two-image-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85%; width: 60%;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+}
+
+.main-two-image {
+  display: block;
+  height: 30%; width: 40%;
+  margin: 1% 2%;
+}
+
+.main-two .yellow {
+  background-color: yellow;
+}
+
+.main-two .orange {
+  background-color: orange;
+}
+
+.main-two .blue {
+  background-color: blue;
+}
+
+.main-two .green {
+  background-color: green;
+}
+
+.main-two .tan {
+  background-color: tan;
+}
+
+.main-two .pink {
+  background-color: pink;
+}
+
+footer {
+  display: block;
+  min-height: 15vh; width: 100%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /*MOBILE HEADER*/
+    header {
+      height: 10vh;
+    }
+
+    .header-nav-one {
+      width: 45%;
+      right: 1%;
+    }
+
+    .header-nav-one a:nth-child(2){
+      display: none;
+    }
+
+    .header-red {
+      display: none;
+    }
+
+    .header-logo {
+      width: 20%;
+      height: 70%;
+      left: 2%;
+      top: 8%;
+    }
+
+    .header-nav-two {
+      height: 50%;
+      width: 12.5%;
+      right: 3%;
+    }
+
+  /*MOBILE MAIN ONE*/
+    .main-one-gray {
+      position: relative;
+      margin: -5% 1.5%;
+      height: 60%; width: 95%;
+    }
+
+    .main-one-image-container {
+      position: relative;
+      flex-flow: column wrap;
+      height: 30%; width: 95%;
+      margin: 7.5% 3.5%;
+    }
+
+    .main-one-image {
+      height: 80%; width: 22.5%;
+    }
+
+  /*MOBILE MAIN TWO*/
+
+  .main-two {
+    height: 100vh;
+  }
+
+  .main-two-image-container {
+    position: relative;
+    width: 100%; height: 45%;
+    margin: 2% 1%;
+  }
+
+  .main-two-image {
+    margin: 2% 5%;
+  }
+
+  .main-two-red {
+    position: relative;
+    width: 95%; height: 47.5%;
+    margin: 6% 1.5%;
+  }
+
+}
