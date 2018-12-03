@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tables</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="styles/table.css">
+
+</head>
+<body>
+
+	<h1>Table</h1>
+	<table summary="detailed info about the table" class="table1">
+	<colgroup>
+		<col style="width: 150px">
+		<col span="2" style="width: 220px">
+	</colgroup>
+		<thead>
+  		<tr>
+  			<th></th>  <th scope="column">Smartphone 3000</th>  <th scope="column">Flip Phone</th>
+  		</tr>
+		</thead>
+  		<tr>
+  			<th scope="row">Storage</th>  <td>256GB</td>  <td>16K</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Screen Size</th>  <td>450px X 700px</td>  <td>300px X 360px</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Laser Pointer</th>  <td>Yes</td>  <td>No</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Camera</th>  <td colspan="2">5.6 megapixels</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Storage</th>  <td>256GB</td>  <td>16K</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Screen Size</th>  <td>450px X 700px</td>  <td>300px X 360px</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Laser Pointer</th>  <td>Yes</td>  <td rowspan="2">No</td>
+  		</tr>
+  		<tr>
+  			<th scope="row">Camera</th>  <td>5.6 megapixels</td>
+  		</tr>
+  <caption>Table Caption</caption>
+	</table>
+
+</body>
+</html>
