@@ -1,82 +1,122 @@
 /*CSS for Directory*/
 /* css reset rule */
 * {
-  margine: 0;
-  padding: 0:
+  margin: 0;
+  padding: 0;
   border: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #F2E0C9; /*light yellow*/
+  background-image: url("../images/backgroundone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Mali', cursive;
-  font-size: 24px;
-  color: #E7AD99;
 }
 
-ul {
-  list-style: none;
+.overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(2, 195, 154, 0.5);
+  z-index: -1;
 }
 
-li {
-  margin: 25px 0px;
+body > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  height: 75px; width: 300px;
+  font-weight: bold;
+  color: white;
 }
 
-a {
-  font-family: 'Mali', cursive;
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
+.list-container {
+  display: block;
+  position: relative;
+  height: 500px; width: 750px;
+  margin: -50px auto;
+}
+
+.list-container header {
+  display: block;
+  position: relative;
+  height: 15%; width: 100%;
+  background-color: rgba(2, 195, 154);
+  border-bottom: 1px solid black;
+}
+
+.list-container header h2 {
+  position: absolute;
+  left: 200px;
+  top: 10px;
   text-align: center;
+  font-size: 2.5em;
+  margin-left: 25px;
+  color: white;
+}
+
+.list-container header h2.scratch {
+  left: 125px;
+}
+
+.list-container header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; width: 20%;
+  border-left: 1px solid black;
   text-decoration: none;
-  outline: none;
-  color: #3A3335;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  background: #89C6B0; /* Old browsers */
-  background: -moz-linear-gradient(top, #89C6B0 0%, #cbebff 47%, #a1dbff 100%);
-  background: -webkit-linear-gradient(top, #89C6B0 0%,#cbebff 47%,#a1dbff 100%);
-  background: linear-gradient(to bottom, #89C6B0 0%,#cbebff 47%,#a1dbff 100%);
+  font-size: 1.1em;
+  color: navy;
 }
 
-a:hover {
-color: #505168;
-background: #a1dbff; /* Old browsers */
-background: -moz-linear-gradient(top, #a1dbff 0%, #cbebff 53%, #89C6B0 100%);
-background: -webkit-linear-gradient(top, #a1dbff 0%,#cbebff 53%,#89C6B0 100%);
-background: linear-gradient(to bottom, #a1dbff 0%,#cbebff 53%,#89C6B0 100%);
+.list-container main {
+  display: block;
+  position: relative;
+  height: 85%; width: 100%;
+  background-color: white;
 }
 
-a:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.list-container main nav {
+  display: block;
+  height: 100%; width: 100%;
+  list-style-type: none;
 }
 
-header {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  font-size: 30px;
+.list-container main nav a {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25%; width: 100%;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
 }
 
-/* type selector */
-h1{
-  text-align: center;
-  text-transform: uppercase;
+.list-container main nav a:hover {
+  background-color: lightgray;
 }
 
-/* descendent selector */
-h1 span {
-  font-size: 90%;
-  color: #E7AD99;
+.list-container main nav a div {
+  display: block;
+  position: relative;
+  height: 100%; width: 15%;
 }
 
-h2 {
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 60px;
-  line-height: 60px;
+.list-container main nav a div div {
+  display: block;
+  margin: 40px 65px;
+  height: 25px; width: 25px;
+  border: 2px solid #028090;
+  background-color: lightcoral;
 }

@@ -1,0 +1,51 @@
+/*Reset*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5DED0;
+}
+
+header {
+  display: block;
+  position: relative;
+  height: 125px; width: 100%;
+  border-bottom: 2px solid pink;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 3em;
+}
+
+header a {
+  position: absolute;
+  height: 40%; width: 10%;
+  top: 40px; right: 100px;
+  border: 3px dashed navy;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: navy;
+}
+
+header a:hover {
+  background-color: navy;
+  border: 3px solid navy;
+  color: lightgray;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  height: 600px; width: 1000px;
+}
