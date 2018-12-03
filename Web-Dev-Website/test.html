@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Asn 6 Nav</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="styles/test.css">
+
+  <!-- internal styles -->
+
+</head>
+
+
+<body>
+
+  <!-- title -->
+  <header>Nav Menu Examples</header>
+
+  <div class="showcase">
+
+    <div class="block blue"></div>
+    <div class="block purple"></div>
+    <div class="block green"></div>
+
+
+  </div>
+
+  <!-- buttons -->
+  <div class="previous"></div>
+  <div class="next"></div>
+
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      const $block = $(".block");
+      const $next = $(".next");
+      const $previous = $(".previous");
+
+      $next.click(function(){
+        $block.animate({ left: "-=900" });
+        $block.childen("blue
+      });
+
+      $previous.click(function(){
+        $block.animate({ left: "+=900" });
+      });
+
+    });
+  </script>
+
+</body>
+</html>

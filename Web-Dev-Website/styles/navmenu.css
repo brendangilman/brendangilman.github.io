@@ -1,0 +1,510 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #F2E0C9;
+}
+
+header {
+  font-weight: bold;
+  color: navy;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 2.5em;
+}
+
+.showcase {
+  display: block;
+  margin: 15px auto;
+  height: 600px; width: 1200px;
+  border: 15px solid navy;
+  background-color: white;
+  position: relative;
+}
+
+.previous {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  height: 150px; width: 150px;
+  background-image: url("../images/arrow-previous.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.next {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 300px;
+  height: 150px; width: 150px;
+  background-image: url("../images/arrow-next.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/*Examples*/
+
+
+/* ================== Example One ================ */
+ .example-one ul {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 150px; width: 700px;
+   margin: 200px auto;
+   list-style-type: none;
+ }
+
+ .example-one ul li {
+   display: block;
+   height: 130px; width: 130px;
+   border: 3px solid black;
+   border-radius: 50%;
+ }
+
+ .example-one .one {
+   background-image: url("../images/spritecssone.png");
+   background-position: -2px -260px;
+ }
+
+ .example-one .two {
+   background-image: url("../images/spritecssone.png");
+   background-position: 128px -260px;
+ }
+
+ .example-one .three {
+   background-image: url("../images/spritecssone.png");
+   background-position: 258px -260px;
+ }
+
+ .example-one .four {
+   background-image: url("../images/spritecssone.png");
+   background-position: 388px -260px;
+ }
+
+ .example-one .five {
+   background-image: url("../images/spritecssone.png");
+   background-position: 518px -260px;
+ }
+
+ .example-one .one:hover {
+   background-image: url("../images/spritecssone.png");
+   background-position: -2px -133px;
+   transition: .2s ease-in-out;
+ }
+
+ .example-one .two:hover {
+   background-image: url("../images/spritecssone.png");
+   background-position: 128px -133px;
+   transition: .2s ease-in-out;
+ }
+
+ .example-one .three:hover {
+   background-image: url("../images/spritecssone.png");
+   background-position: 258px -133px;
+   transition: .2s ease-in-out;
+ }
+
+ .example-one .four:hover {
+   background-image: url("../images/spritecssone.png");
+   background-position: 388px -133px;
+   transition: .2s ease-in-out;
+ }
+
+ .example-one .five:hover {
+   background-image: url("../images/spritecssone.png");
+   background-position: 518px -133px;
+   transition: .2s ease-in-out;
+ }
+
+ .example-one .one:active {
+   background-image: url("../images/spritecssone.png");
+   background-position: -2px -3px;
+   transition: -2s ease-in-out;
+ }
+
+ .example-one .two:active {
+   background-image: url("../images/spritecssone.png");
+   background-position: 128px -3px;
+   transition: -2s ease-in-out;
+ }
+
+ .example-one .three:active {
+   background-image: url("../images/spritecssone.png");
+   background-position: 258px -3px;
+   transition: -2s ease-in-out;
+ }
+
+ .example-one .four:active {
+   background-image: url("../images/spritecssone.png");
+   background-position: 388px -3px;
+   transition: -2s ease-in-out;
+ }
+
+ .example-one .five:active {
+   background-image: url("../images/spritecssone.png");
+   background-position: 518px -3px;
+   transition: -2s ease-in-out;
+ }
+/* ------------------ Example One END ---------------- */
+
+/* ================== Example Two ================ */
+  .example-two ul {
+    display: block;
+    height: 350px; width: 150px;
+    margin: 150px auto;
+    list-style-type: none;
+  }
+
+  .example-two ul li {
+    display: block;
+    margin: 25px auto;
+    height: 51.5px; width: 51.25px;
+    border: 3px solid black;
+  }
+
+  .example-two .one {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: -2px -2px;
+  }
+
+  .example-two .two {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 49.5px -2px;
+  }
+
+  .example-two .three {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 100px -2px;
+  }
+
+  .example-two .four {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 150px -2px;
+  }
+
+  .example-two .one:hover {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: -2px 49.25px;
+  }
+
+  .example-two .two:hover {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 49.5px 49.25px;
+  }
+
+  .example-two .three:hover {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 100px 49.25px;
+  }
+
+  .example-two .four:hover {
+    background-image: url("../images/spritecsstwo.gif");
+    background-position: 150px 49.25px;
+  }
+/* ------------------ Example Two END ---------------- */
+
+/* ================== Example Three ================ */
+.example-three > ul {
+  display: flex;
+  position: relative;
+  height: 50px; width: 800px;
+  margin: 50px auto;
+  list-style-type: none;
+  background-color: #5A827E;
+}
+
+.example-three > ul > li {
+  display: block;
+  height: 100%; width: 33.3%;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  font-style: italic;
+}
+
+.example-three > ul > li:hover {
+  overflow: visible;
+  background-color: #415E5B;
+}
+
+.first > ul {
+  display: block;
+  position: absolute;
+  top: 50px;
+  height: 400px; width: 100.5%;
+  list-style-type: none;
+  background-color: #415E5B;
+}
+
+.first > ul > li {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  height: 10%; width: 100%;
+  border-top: 1px dotted rgba(255,255,255,0.5);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.first > ul > li:hover {
+  background-color: white;
+  color: blue;
+  overflow: visible;
+}
+
+.hover-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  position: absolute;
+  margin: -15% 100%;
+  height: 400px; width: 535px;
+  border: 3px solid black;
+}
+
+/*BRUTE FORCE NONSENSE*/
+.two .hover-container {
+  margin: -80px 100%;
+}
+
+.three .hover-container {
+  margin: -120px 100%;
+}
+
+.four .hover-container {
+  margin: -160px 100%;
+}
+
+.five .hover-container {
+  margin: -200px 100%;
+}
+
+.six .hover-container {
+  margin: -240px 100%;
+}
+
+.seven .hover-container {
+  margin: -280px 100%;
+}
+
+.eight .hover-container {
+  margin: -320px 100%;
+}
+
+.nine .hover-container {
+  margin: -360px 100%;
+}
+
+.ten .hover-container {
+  margin: -400px 100%;
+}
+
+/*BRUTE FORCE END*/
+
+.list-container {
+  display: block;
+  height: auto; width: 30%;
+  margin: 25px;
+}
+
+.list-container h2 {
+  text-align: left;
+  color: rgba(100,100,100);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.list-container ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.list-container ul li {
+  line-height: 25px;
+}
+
+
+/* ------------------ Example Three END ---------------- */
+
+/* ================== Example Four ================ */
+
+.example-four ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 50px; width: 1000px;
+  background-color: #2E435B;
+  margin: 50px auto;
+  list-style-type: none;
+}
+
+.example-four ul li {
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.example-four ul li:hover {
+  color: gray;
+  cursor: pointer;
+  overflow: visible;
+}
+
+
+.example-four .underline {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px; width: 100%;
+  background-color: #63858E;
+}
+
+.example-four .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: -25px;
+  top: 30px;
+  z-index: 1;
+  border: 1px solid black;
+  background-color: white;
+  height: 200px; width: 500px;
+}
+
+.example-four .four .dropdown-container {
+  left: -125px;
+}
+
+.example-four .five .dropdown-container {
+  left: -255px;
+}
+
+.example-four .six .dropdown-container {
+  left: -405px;
+}
+
+.example-four .dropdown-container:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  display: block;
+  height: 15px; width: 100%;
+}
+
+.dropdown-container .vr {
+  display: block;
+  height: 90%; width: 0;
+  border-left: 1px solid black;
+  margin: 15px;
+}
+
+.dropdown-container .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 100%; width: 33%;
+}
+
+.dropdown-container .left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%; width: 90%;
+  background-color: #2E435B;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.dropdown-container .left a:hover {
+  background-color: #50749E;
+}
+
+.dropdown-container .center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  height: 100%; width: 33%;
+  padding-top: 20px;
+}
+
+.dropdown-container .center a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgba(48,48,48);
+  margin: 5px;
+}
+
+.dropdown-container .center a:hover {
+  cursor: pointer;
+  color: rgba(160,160,160);
+}
+
+.dropdown-container .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  height: 100%; width: 33%;
+  padding-top: 20px;
+}
+
+.dropdown-container .right a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgba(48,48,48);
+  margin: 5px;
+}
+
+.dropdown-container .right a:hover {
+  cursor: pointer;
+  color: rgba(160,160,160);
+}
+
+/* ------------------ Example Four END ---------------- */
+
+.to {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 75px;
+  right: 100px;
+  height: 25px; width: auto;
+  padding: 15px;
+  border: 3px dashed tan;
+}
+
+.to:hover {
+  background-color: tan;
+  border: 3px solid tan;
+  cursor: pointer;
+}

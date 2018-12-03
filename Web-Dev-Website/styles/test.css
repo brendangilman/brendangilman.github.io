@@ -1,0 +1,81 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #F2E0C9;
+}
+
+header {
+  font-weight: bold;
+  color: navy;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 2.5em;
+}
+
+.showcase {
+  display: block;
+  margin: 15px auto;
+  height: 600px; width: 1200px;
+  /*border: 15px solid navy;*/
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.block {
+  display: block;
+  position: absolute;
+  left: 300px;
+  top: 125px;
+  height: 300px; width: 600px;
+}
+
+
+
+
+.blue {
+  background-color: blue;
+  left: -600px;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+  left: 1200px;
+}
+
+.previous {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  height: 150px; width: 150px;
+  background-image: url("../images/arrow-previous.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.next {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 300px;
+  height: 150px; width: 150px;
+  background-image: url("../images/arrow-next.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
