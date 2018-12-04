@@ -367,21 +367,21 @@
             $exampleTwo.show();
             $exampleThree.hide();
             $exampleFour.hide();
-            count = count + 1;
+            count = 1;
             break;
           case 1:
             $exampleOne.hide();
             $exampleTwo.hide();
             $exampleThree.show();
             $exampleFour.hide();
-            count = count + 1;
+            count = 2;
             break;
           case 2:
             $exampleOne.hide();
             $exampleTwo.hide();
             $exampleThree.hide();
             $exampleFour.show();
-            count = count + 1;
+            count = 3;
             break;
           case 3:
             $exampleOne.show();
@@ -396,32 +396,32 @@
       $previous.click(function(){
         switch(count) {
           case 0:
-            $exampleOne.hide();
+            $exampleOne.hide(); /*active*/
             $exampleTwo.hide();
             $exampleThree.hide();
             $exampleFour.show();
-            count = count + 1;
+            count = 3;
             break;
           case 1:
-            $exampleOne.hide();
-            $exampleTwo.hide();
-            $exampleThree.show();
+            $exampleOne.show();
+            $exampleTwo.hide(); /*active*/
+            $exampleThree.hide();
             $exampleFour.hide();
-            count = count + 1;
+            count = 0;
             break;
           case 2:
             $exampleOne.hide();
             $exampleTwo.show();
-            $exampleThree.hide();
+            $exampleThree.hide(); /*active*/
             $exampleFour.hide();
-            count = count + 1;
+            count = 1;
             break;
           case 3:
-            $exampleOne.show();
+            $exampleOne.hide();
             $exampleTwo.hide();
-            $exampleThree.hide();
-            $exampleFour.hide();
-            count = 0;
+            $exampleThree.show();
+            $exampleFour.hide(); /*active*/
+            count = 2;
             break;
         }
       });
