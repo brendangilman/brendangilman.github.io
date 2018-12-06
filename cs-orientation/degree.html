@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Degree Pathway</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="degree.css">
+
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header class='main-header'><h1>Degree Pathway</h1></header>
+  <div class="logo-container">
+    <div class="logo osu-logo"><div class="logo-overlay"></div></div>
+    <div class="logo uoregon-logo"><div class="logo-overlay"></div></div>
+  </div>
+
+  <div class="header">
+    <div class="back">Home</div>
+    <h1 class="osu-header"><span>O</span>regon <span>S</span>tate <span>U</span>niversity</h1>
+    <h1 class="uoregon-header"><span>U</span>niversity <span>O</span>f <span>O</span>regon</h1>
+  </div>
+
+  <div class="osu-container">
+      <a href="https://osucascades.edu/computer-science/degree-requirements" class="block border button">Degree Requirements</a>
+      <div class="block flex">OSU-Cascades offers a bachelor of science in computer science with an applied option in web and mobile software development. Some of the most exciting and promising areas of computer science lie in the ability to extract insight out of extremely large sets of data and deliver those insights to businesses and consumers in real time over web and mobile applications.</div>
+      <div class="block logo"></div>
+      <a href="https://osucascades.edu/academics/computer-science" class="block border button">Degree Main Page</a>
+      <a href="https://osucascades.edu/computer-science/careers" class="block border button">Careers</a>
+      <div class="block flex">OSU-Cascades is out there at the edge. Of the Deschutes River and the Cascade Range. And they're inspired by everything around them. You will be, too.</div>
+  </div>
+
+  <div class="uoregon-container">
+    <a href="https://bootcamp.uoregon.edu/wp-content/uploads/sites/78/2018/09/University_of_Oregon_Curriculum_Overview_Coding.pdf" class="block border button">Curriculum Overview</a>
+    <div class="block flex" style='font-size: 2em;'>University of Oregon Bootcamp.</div>
+    <div class="block logo"></div>
+    <a href="https://bootcamp.uoregon.edu/" class="block border button">Bootcamp Main Page</a>
+    <a href="https://www.uoregon.edu/" class="block border button">UOregon Website Homepage</a>
+    <div class="block flex">“... the University of Oregon has a profound duty and mission to promote and celebrate diversity of all types. Bringing people of different backgrounds and beliefs together lifts communities throughout our state, nation, and world and also enhances our primary missions of education, research, and service.”</div>
+  </div>
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+
+    const $mainHeader = $('.main-header');
+    const $osuHeader = $('.osu-header');
+    const $uoregonHeader = $('.uoregon-header');
+    const $header = $('.header');
+
+    const $logoContainer = $('.logo-container');
+    const $osuContainer = $('.osu-container');
+    const $uoregonContainer = $('.uoregon-container');
+
+    const $osuLogo = $('.osu-logo');
+    const $uoregonLogo = $('.uoregon-logo');
+
+    const $back = $('.back');
+
+    $osuHeader.hide();
+    $uoregonHeader.hide();
+    $osuContainer.hide();
+    $uoregonContainer.hide();
+    $header.hide()
+
+    $osuLogo.click(function(){
+
+      $mainHeader.hide();
+      $osuLogo.hide();
+      $uoregonLogo.hide();
+      $logoContainer.hide();
+
+      $header.show();
+      $osuHeader.show();
+      $osuContainer.show();
+
+    });
+
+    $uoregonLogo.click(function(){
+
+      $mainHeader.hide();
+      $osuLogo.hide();
+      $uoregonLogo.hide();
+      $logoContainer.hide();
+
+      $header.show();
+      $uoregonHeader.show();
+      $uoregonContainer.show();
+
+    });
+
+    $back.click(function(){
+
+      $header.hide();
+      $uoregonHeader.hide();
+      $uoregonContainer.hide();
+      $osuHeader.hide();
+      $osuContainer.hide();
+
+      $mainHeader.show();
+      $osuLogo.show();
+      $uoregonLogo.show();
+      $logoContainer.show();
+
+    });
+
+  });
+
+  </script>
+
+</body>
+</html>

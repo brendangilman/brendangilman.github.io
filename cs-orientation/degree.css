@@ -1,0 +1,259 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("../images/aerial.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  /*font-family: 'Graduate', cursive;*/
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(64, 64, 64, 0.7);
+  z-index: -1;
+}
+
+header {
+  display: block;
+  height: 200px; width: 100%;
+}
+
+header h1 {
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  line-height: 250px;
+  font-size: 3em;
+  color: white;
+  text-decoration: dashed overline;
+}
+
+/*============ MAIN PAGE ===========*/
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  min-height: 500px; width: 100%;
+}
+
+.logo-container .logo {
+  display: block;
+  position: relative;
+  height: 450px; width: 450px;
+  border: 5px solid white;
+  background-color: white;
+}
+
+.logo-container .osu-logo {
+  background-image: url("../images/osu-logo-one.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-container .osu-logo:hover {
+  border: 5px solid rgb(255,140,0);
+}
+
+.logo-container .osu-logo .logo-overlay {
+  display: block;
+  height: 100%; width: 100%;
+}
+
+.logo-container .osu-logo .logo-overlay:hover {
+  background-color: rgba(255,140,0,0.8);
+}
+
+.logo-container .uoregon-logo {
+  background-image: url("../images/uoregon-logo-one.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-container .uoregon-logo:hover {
+  border: 5px solid rgb(34,139,34);
+}
+
+.logo-container .uoregon-logo .logo-overlay {
+  display: block;
+  height: 100%; width: 100%;
+}
+
+.logo-container .uoregon-logo .logo-overlay:hover {
+  background-color: rgba(34,139,34,0.8);
+}
+
+/*============ MAIN PAGE END! ===========*/
+
+.header {
+  display: block;
+  position: relative;
+  height: 100px; width: 100%;
+}
+
+.header h1 {
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  line-height: 100px;
+  font-size: 3em;
+  color: white;
+}
+
+.header .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; width: 100px;
+  border: 1px solid white;
+  position: absolute;
+  top: 25px;
+  left: 24px;
+  color: white;
+  transition: all .5s;
+}
+
+.header .back:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+/*============ OSU PAGE ===========*/
+
+.header .osu-header span {
+  color: orange;
+}
+
+.osu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 600px; width: 100%;
+}
+
+.osu-container .block {
+  display: block;
+  position: relative;
+  height: 250px; width: 30%;
+  border-radius: 15px;
+}
+
+.osu-container .border {
+  border: 3px solid orange;
+}
+
+.osu-container .logo {
+  background-image: url("../images/osu-logo-two.png");
+  background-repeat: no-repeat;
+  background-size: 250px 30%;
+  background-position: center;
+}
+
+.osu-container .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.osu-container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.osu-container .button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+
+/*============ OSU PAGE END! ===========*/
+
+/*============ UOREGON PAGE ===========*/
+
+.header .uoregon-header {
+  color: green;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header .uoregon-header span {
+  color: yellow;
+}
+
+.uoregon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 600px; width: 100%;
+}
+
+.uoregon-container .block {
+  display: block;
+  position: relative;
+  height: 250px; width: 30%;
+  border-radius: 15px;
+}
+
+.uoregon-container .border {
+  border: 3px solid yellow;
+}
+
+.uoregon-container .logo {
+  background-image: url("../images/uoregon-logo-two.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+}
+
+.uoregon-container .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.uoregon-container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.uoregon-container .button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+
+/*============ UOREGON PAGE END! ===========*/
