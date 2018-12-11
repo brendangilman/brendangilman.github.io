@@ -1,0 +1,198 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #DCD0C0;
+    overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 10vh; width: 100%;
+  background-color: #4F5D75;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 95%; width: 50%;
+  margin-right: 2.5%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #F4F4F4;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all .25s;
+}
+
+header nav a:hover {
+  color: #C0B383;
+}
+
+.active, .active:hover {
+  color: #C0B383;
+}
+
+   #login {
+  position: absolute;
+  height: 40vh; width: 20vw;
+  top: 12.5vh; right: 1.5vw;
+  border: 3px solid #fff;
+  background-color: #4F5D75;
+  z-index: 1;
+}
+
+   #login:after,   #login:before {
+	bottom: 100%;
+	left: 80%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+ #login:after {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #4F5D75;
+	border-width: 26px;
+	margin-left: -26px;
+}
+ #login:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: white;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+ #login p {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5% 0;
+  margin-bottom: 10%;
+}
+
+ #login input[name=username], input[name=password] {
+  display: block;
+  border: 2px solid #4F5D75;
+  padding: 5%;
+  margin: 5% auto;
+}
+
+ #login input::placeholder {
+  text-align: center;
+}
+
+ input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+ #login .submit-button {
+  display: block;
+  margin: 0 auto;
+  height: 10%; width: 30%;
+  border: 2px solid white;
+  color: white;
+  background-color: #4F5D75;
+}
+
+ #login .submit-button:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+ #login .submit-button:active {
+  border: 2px solid #4F5D75;
+  color: #4F5D75;
+  background-color: white;
+}
+
+/*============= header END ==============*/
+
+.form{
+  display: block;
+  position: relative;
+  margin: 10% auto;
+  height: 60vh; width: 50%;
+  border: 3px solid #6D7993;
+  text-align:left;
+}
+
+.form h1 {
+  margin: 5% 0;
+  color: #96858F;
+  text-align: center;
+}
+
+.form input[type="file"] {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
+   border: 0;
+}
+.custom-file-upload {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 130px;
+  height: 130px;
+  font: 13px/130px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+	letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+
+.form input[type=submit] {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  width: 130px;
+  height: 60px;
+  font: 13px/60px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+	letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(3, 3, 3, 0.6);
+  border-radius: 3px;
+}
+
+.custom-file-upload:hover, .form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}

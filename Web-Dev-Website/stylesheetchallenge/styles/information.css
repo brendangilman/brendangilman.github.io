@@ -1,0 +1,214 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #DCD0C0;
+    overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 10vh; width: 100%;
+  background-color: #4F5D75;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 95%; width: 50%;
+  margin-right: 2.5%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #F4F4F4;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all .25s;
+}
+
+header nav a:hover {
+  color: #C0B383;
+}
+
+header nav a:hover {
+  color: #C0B383;
+}
+
+.active, .active:hover {
+  color: #C0B383;
+}
+
+form {
+  position: absolute;
+  height: 40vh; width: 20vw;
+  top: 12.5vh; right: 1.5vw;
+  border: 3px solid #fff;
+  background-color: #4F5D75;
+  z-index: 1;
+}
+
+form:after, form:before {
+	bottom: 100%;
+	left: 80%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+form:after {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #4F5D75;
+	border-width: 26px;
+	margin-left: -26px;
+}
+form:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: white;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+form p {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5% 0;
+  margin-bottom: 10%;
+}
+
+form input[name=username], input[name=password] {
+  display: block;
+  border: 2px solid #4F5D75;
+  padding: 5%;
+  margin: 5% auto;
+}
+
+form input::placeholder {
+  text-align: center;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+form .submit-button {
+  display: block;
+  margin: 0 auto;
+  height: 10%; width: 30%;
+  border: 2px solid white;
+  color: white;
+  background-color: #4F5D75;
+}
+
+form .submit-button:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+form .submit-button:active {
+  border: 2px solid #4F5D75;
+  color: #4F5D75;
+  background-color: white;
+}
+
+/*============= header END ==============*/
+
+body > h1 {
+  margin: 3%;
+  text-align: center;
+  font-size: 3em;
+  color: #373737;
+  font-family: 'Unlock', cursive;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 75vh; width: 100vw;
+  margin: 0% auto;
+}
+
+.image-container-one, .image-container-two {
+  display: block;
+  position: absolute;
+  height: 60%; width: 40%;
+  z-index: 1;
+}
+
+.colorbox-one, .colorbox-two {
+  display: block;
+  position: absolute;
+  height: 80%; width: 40%;
+  background-color: #CE93D8;
+}
+
+.information-box-one, .information-box-two {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 5%;
+  height: 90%; width: 65%;
+  color: white;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 110%;
+}
+
+.information-box-one h1, h1, p {
+  margin: 3% 0;
+}
+
+.information-box-two h1, h1, p {
+  margin: 3% 0;
+}
+
+.information-box-one {
+  left: 5%;
+}
+
+.information-box-two {
+  right: 5%;
+}
+
+.image-container-one, .colorbox-two {
+  margin: 0 15%;
+}
+
+.image-container-two, .colorbox-one {
+  margin: 0 -15%;
+}
+
+.image-container-one {
+  background-image: url("../images/cssimageone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-container-two {
+  background-image: url("../images/cssimagethree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

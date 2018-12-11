@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Style Sheet Challenge</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Unlock" rel="stylesheet"> <!-- google font -->
+  <link rel="stylesheet" href="styles/submit.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <!-- internal styles -->
+
+</head>
+<body>
+
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="information.html">What is the SSC?</a>
+      <a href="rules.html">Rules and The Challenge</a>
+      <a href="support.html">Support</a>
+      <a class="login active" href="#">Login</a>
+    </nav>
+  </header>
+
+  <form id="login">
+    <p>Login Form</p>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Pasword">
+    <input type="submit" name="submit" class="submit-button">
+  </form>
+
+  <div class="form">
+    <h1>Submit Your File Here:</h1>
+    <form>
+      <label for="file-upload" class="custom-file-upload">Upload File</label>
+      <input type="file" name="zip" accept="zip/*" id="file-upload">
+      <input type="submit">
+    </form>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/jquery.countdown.min.js"></script>
+
+  <!-- Internal Scripts -->
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      $("#login").hide();
+
+      $(".login").click(function(){
+        $("#login").toggle();
+      });
+    });
+
+  </script>
+
+  </body>
+  </html>

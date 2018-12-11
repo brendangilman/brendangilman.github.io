@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Style Sheet Challenge</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Unlock" rel="stylesheet"> <!-- google font -->
+  <link rel="stylesheet" href="styles/support.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <!-- internal styles -->
+
+</head>
+<body>
+
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="information.html">What is the SSC?</a>
+      <a href="rules.html">Rules and The Challenge</a>
+      <a href="support.html" class="active">Support</a>
+      <a class="login" href="#">Login</a>
+    </nav>
+  </header>
+
+  <form id="login">
+    <p>Login Form</p>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Pasword">
+    <input type="submit" name="submit" class="submit-button">
+  </form>
+
+  <div class="container">
+  <form id="contact" action="" method="post">
+    <h3>Contact Form</h3>
+    <h4>Contact us</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+  <!-- External Scripts -->
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/jquery.countdown.min.js"></script>
+
+  <!-- Internal Scripts -->
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      $("#login").hide();
+
+      $(".login").click(function(){
+        $("#login").toggle();
+      });
+    });
+
+  </script>
+
+  </body>
+  </html>

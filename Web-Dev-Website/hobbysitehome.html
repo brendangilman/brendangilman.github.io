@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Style Sheet Challenge</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Unlock" rel="stylesheet"> <!-- google font -->
+  <link rel="stylesheet" href="styles/hobbysitehome.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <!-- internal styles -->
+
+</head>
+<body>
+
+
+  <header>
+    <nav>
+      <a href="home.html" class="active">Home</a>
+      <a href="information.html">What is the SSC?</a>
+      <a href="rules.html">Rules and The Challenge</a>
+      <a href="support.html">Support</a>
+      <a class="login" href="#">Login</a>
+      <a href="submit.html" style="display:none;">Submit</a>
+    </nav>
+  </header>
+
+  <form>
+    <p>Login Form</p>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Pasword">
+    <input type="submit" name="submit" class="submit-button">
+  </form>
+
+  <div class="title-container">
+    <h1><span>S</span>tyle <span>S</span>heet <span>C</span>hallenge<span>!</span></h1>
+  </div>
+
+  <div class="countdown-container">
+    <p>Countdown<span>:</span></p>
+    <div class="clock"></div>
+  </div>
+
+  <a class="button" href="#">What is the SSC?</a>
+
+  <!-- External Scripts -->
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/jquery.countdown.min.js"></script>
+
+  <!-- Internal Scripts -->
+  <script type="text/javascript">
+
+      $(".clock").countdown('2019/1/1', function(event){
+
+        var $this = $(this).html(event.strftime(''
+        + '<div><span>%w</span><span>Weeks</span></div>'
+        + '<div><span>%d</span><span>Days</span></div>'
+        + '<div><span>%H</span><span>Hours</span></div>'
+        + '<div><span>%M</span><span>Minutes</span></div>'
+        + '<div><span>%S</span><span>Seconds</span></div>'))
+
+      });
+
+      $(document).ready(function() {
+        $("form").hide();
+
+        $(".login").click(function(){
+          $("form").toggle();
+        });
+      });
+
+  </script>
+
+</body>
+</html>

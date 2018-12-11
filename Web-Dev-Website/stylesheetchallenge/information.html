@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Style Sheet Challenge</title>
+
+  <!-- external styles -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Unlock" rel="stylesheet"> <!-- google font -->
+  <link rel="stylesheet" href="styles/information.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <!-- internal styles -->
+
+</head>
+<body>
+
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="information.html" class="active">What is the SSC?</a>
+      <a href="rules.html">Rules and The Challenge</a>
+      <a href="support.html">Support</a>
+      <a class="login" href="#">Login</a>
+    </nav>
+  </header>
+
+  <form>
+    <p>Login Form</p>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Pasword">
+    <input type="submit" name="submit" class="submit-button">
+  </form>
+
+  <h1>What is the Style Sheet Challege?</h1>
+
+  <div class="information-container">
+    <div class="image-container-one"></div>
+    <div class="colorbox-one">
+      <div class="information-box-one">
+        <h3>What is this?</h3>
+        <h1>We make Webpages!</h1>
+        <p>This challenge is actually is more of a compitition. A compitition held once a year, to find the best designed webpage.
+           There is only a 24 hour window to design the best webpage.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="information-container">
+    <div class="image-container-two"></div>
+    <div class="colorbox-two">
+      <div class="information-box-two">
+        <h3>Who are we?</h3>
+        <h1>We are a group of UI/UX designers!</h1>
+        <p>After the 24 hours are up we review all the submitions and choose our top choices of best designs.
+           We use a simple rubric to decide which one are the 'best'. We choose the top 3 winners and give them a spotlight on our site.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/jquery.countdown.min.js"></script>
+
+  <!-- Internal Scripts -->
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      $("form").hide();
+
+      $(".login").click(function(){
+        $("form").toggle();
+      });
+    });
+
+  </script>
+
+  </body>
+  </html>

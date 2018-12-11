@@ -1,0 +1,313 @@
+/*Reset Rule*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 10vh; width: 100%;
+  background-color: #4F5D75;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 95%; width: 50%;
+  margin-right: 2.5%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #F4F4F4;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all .25s;
+}
+
+header nav a:hover {
+  color: #C0B383;
+}
+
+header nav a:hover {
+  color: #C0B383;
+}
+
+.active, .active:hover {
+  color: #C0B383;
+}
+
+form {
+  position: absolute;
+  height: 40vh; width: 20vw;
+  top: 12.5vh; right: 1.5vw;
+  border: 3px solid #fff;
+  background-color: #4F5D75;
+  z-index: 1;
+}
+
+form:after, form:before {
+	bottom: 100%;
+	left: 80%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+form:after {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #4F5D75;
+	border-width: 26px;
+	margin-left: -26px;
+}
+form:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: white;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+form p {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5% 0;
+  margin-bottom: 10%;
+}
+
+form input[name=username], input[name=password] {
+  display: block;
+  border: 2px solid #4F5D75;
+  padding: 5%;
+  margin: 5% auto;
+}
+
+form input::placeholder {
+  text-align: center;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+form .submit-button {
+  display: block;
+  margin: 0 auto;
+  height: 10%; width: 30%;
+  border: 2px solid white;
+  color: white;
+  background-color: #4F5D75;
+}
+
+form .submit-button:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+form .submit-button:active {
+  border: 2px solid #4F5D75;
+  color: #4F5D75;
+  background-color: white;
+}
+
+/*============= header END ==============*/
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; width: 75vw;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.title-container h1 {
+  font-family: 'Unlock', cursive;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  position: relative;
+  height: 45vh; width: 80vw;
+  margin: -1% auto;
+}
+
+.countdown-container p {
+  display: block;
+  font-family: 'Unlock', cursive;
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.countdown-container p span {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.clock div {
+  position: relative;
+  width: 100px;
+  padding: 15px;
+  margin: 0px 5px;
+  background-color: #262626;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.clock div:before {
+    content: '';
+    position: absolute;
+    width: 100%; height: 50%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.clock div span {
+  display: block;
+  text-align: center;
+}
+
+.clock div span:nth-child(1) {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.clock div span:nth-child(2) {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 7.5vh; width: 15vw;
+  border: 3px solid black;
+  margin: 2% auto;
+  text-decoration: none;
+  color: white;
+  font-size: 1.75em;
+  font-family: 'VT323', monospace;
+  overflow: hidden;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:before {
+  content: '';
+  z-index: -1;
+  display: block;
+  position: absolute;
+  height: 750%; width: 150%;
+  background-color: #0FC13C;
+  border-radius: 130px;
+  top: 125%;
+  transition: top 0s ease-in;
+  animation: wave 5s infinite linear;
+}
+
+.button:hover:before {
+  top: -150%;
+  transition: top 3s ease-in;
+}
+
+.button:active:before {
+  background-color: purple;
+}
+
+@keyframes wave {
+  0%{
+    transform: translateX(0%) rotate(0deg);
+  }
+  100%{
+    transform: translateX(0%) rotate(360deg);
+  }
+}
