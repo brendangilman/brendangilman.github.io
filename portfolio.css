@@ -11,6 +11,7 @@ body {
   color: #FFF4E9;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
+  overflow: hidden;
 }
 
 header {
@@ -91,7 +92,7 @@ hr {
   display: flex;
   justify-content: space-evenly;
   height: 150px;
-  width: 500px;
+  width: 650px;
   margin: 0px auto;
 }
 
