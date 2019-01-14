@@ -1,0 +1,126 @@
+/*CSS for Directory*/
+/* css reset rule */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/backgroundone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Mali', cursive;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1050px; width: 100%;
+  background-color: rgba(2, 195, 154, 0.5);
+  z-index: -1;
+}
+
+body > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  height: 75px; width: 300px;
+  font-weight: bold;
+  color: white;
+}
+
+.list-container {
+  display: block;
+  position: relative;
+  height: 500px; width: 750px;
+  margin: 50px auto;
+}
+
+.list-container header {
+  display: block;
+  position: relative;
+  height: 15%; width: 100%;
+  background-color: rgba(2, 195, 154);
+  border-bottom: 1px solid black;
+}
+
+.list-container header h2 {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  margin-left: 25px;
+  color: white;
+}
+
+.list-container header h2.scratch {
+  left: 125px;
+}
+
+.list-container header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; width: 20%;
+  border-left: 1px solid black;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: navy;
+}
+
+.list-container main {
+  display: block;
+  position: relative;
+  min-height: 85%; width: 100%;
+  background-color: white;
+}
+
+.list-container main nav {
+  display: block;
+  height: 100%; width: 100%;
+  list-style-type: none;
+}
+
+.list-container main nav a {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25%; width: 100%;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+.list-container main nav a:hover {
+  background-color: lightgray;
+}
+
+.list-container main nav a div {
+  display: block;
+  position: relative;
+  height: 100%; width: 15%;
+}
+
+.list-container main nav a div div {
+  display: block;
+  margin: 40px 65px;
+  height: 25px; width: 25px;
+  border: 2px solid #028090;
+  background-color: lightcoral;
+}
+
+.list-container .folder {
+  background-color: orange;
+}
